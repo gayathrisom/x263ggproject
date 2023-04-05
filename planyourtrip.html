@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>plan your trip</title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/lightbox.min.css" />
+  <style>body {
+    background-color: lavenderblush;padding: -0px; border: 0px; margin: 6px; float: 0%;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html"></a>
+    <div class="search-box">
+      <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <nav>
+      <ul>
+        <li> <a href="aboutus.html">About Us</a> </li>
+        <li> <a href="planyourtrip.html">Plan Your Trip</a> </li>
+        <li> <a href="groupbooking.html">Group Booking</a> </li>
+        <li> <a href="meettheteam.html">Meet The Team</a> </li>
+        <li> <a href="sustainablity.html">Sustainablity</a> </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="./assets/images/menu-icon.png" alt="Menu">
+            </button>
+            <div class="dropdown-content">
+              <a href="page1.html">Page 1</a>
+              <a href="page2.html">Page 2</a>
+              <a href="page3.html">Page 3</a>
+              <a href="page4.html">Page 4</a>
+              <a href="login.html">Login</a>
+            </div>
+          </div>
+        </li>
+    </nav>
+  </header>
+  <!--<article style="width: 70%; float: left;">-->
+    <article style="width: 100%; float: right; padding-bottom: 100px; padding-top:0px;">
+      <div>
+       <p>
+          <img class="size02 float-left padding-right" src="./assets/images/Plan your Trip.jpg" 
+          style="width: 1000px; float: left; height: 500px;
+        margin-right: 0px;">     
+        </p>
+</style>
+        <h4 id="Find a tour">Find A Tour</h4>
+        <h4 id="Find a bike">Find A Bike</h4>
+        <h4 id="Find a bike">Find A Guide</h4>
+        <h4 id="Find a bike"> Group Booking</h4>
+        <h4 id="Find a bike">Restaurants</h4>
+        <h4 id="Find a bike">Shore Excursion Planner</h4>
+        <h4 id="Find a bike">Customer Testimonials</h4>
+        <style>
+        h4 {
+          color: black;
+          font-size: 15px;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          letter-spacing: 5px;
+          padding-top:30px; padding-left: 20px;
+          margin: 20px .5em 0px;
+        }
+      </style>
+  
+       
+      </div>
+    </article>
+  <!--<section style="width: 30%; float: left; padding: 40px">-->
+  <section style="padding: 40px">
+    <!--lightbox-->
+    <!-- <article>
+      <div>
+        
+        <a href="../x263ggproject/assets/assets/images/Home.jpg" data-lightbox="planurtrip" data-title="planurtrip1">
+          <img src="../x263ggproject/assets/assets/images/Home.jpg" alt="planurtrip" style="width: 300px;" />
+        </a>
+        <a href="assets/images/planurtrip2-150x150.jpg" data-lightbox="planurtrip" data-title="planurtrip2">
+          <img src="assets/images/planurtrip2-150x150.jpg" alt="planurtrip"
+            style="width: 300px;" />
+        </a>
+        <a href="./assets/images/planurtrip3.jpg" data-lightbox="planurtrip" data-title="planurtrip3">
+          <img src="./assets/images/chef-elena-arzak-150x150.jpg" alt="Chef Elena Arzak" style="width: 300px;" />
+        </a>
+        <a href="./assets/images/chef-elizabeth-falkner.jpg" data-lightbox="chef" data-title="Elizabeth Falkner">
+          <img src="./assets/images/chef-elizabeth-falkner-150x150.jpg" alt="Chef Elizabeth Falkner"
+            style="width: 300px;" />
+        </a>
+      </div>
+    </article> -->
+
+<!-- Images used to open the lightbox -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+
+<h3 style="text-align:center">5000 Guides in 194 Countries</h3>
+<style>
+  h3 {
+    color: silver;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 7px;
+    padding-top:0px; padding-left: 20px;
+    margin: 100px 100px .5em 0px;
+  }
+</style>
+
+<div class="row">
+  <div class="column">
+    <img src="./assets/images/planurtrip1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assets/images/planurtrip2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assets/images/planurtrip3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./assets/images/Home.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./assets/images/planurtrip1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./assets/images/planurtrip2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./assets/images/planurtrip3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./assets/images/Home.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./assets/images/planurtrip1.jpg.jpg" style="width:50%; height: 80%;" onclick="currentSlide(1)" alt="Guide">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/images/planurtrip2.jpg" style="width:50%; height: 50%;" onclick="currentSlide(2)" alt="Ride">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/images/planurtrip3.jpg" style="width:50%; height: 20%;" onclick="currentSlide(3)" alt="Vacation">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/images/Home.jpg" style="width:50%; height: 50%;" onclick="currentSlide(4)" alt="Japan">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <!-- loading jquery first, then lightbox -- 
+      <script
+        type="text/JavaScript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+      <script
+        type="text/JavaScript"
+        src="assets/javascripts/lightbox.min.js"
+      ></script> 
+      -- loading jquery first, then lightbox -->
+  
+    <!-- OR using lightbox combin with jquery script -->
+    <!-- <script type="text/JavaScript" src="assets/javascripts/lightbox-plus-jquery.min.js"></script> -->
+    
+      </div>
+    </div>
+    
+  </section>
+  <div class="to-top"><a href="#"></a></div>
+  <footer>
+    <div class="social-icon">
+      
+      <!-- Facebook -->
+      <footer style="background-color: white; color: #FFFFFF; text-align: center; padding: 50px; width: 100%; height: 250px;" >
+        <!-- footer content here -->
+      </article>
+      
+     <div class="Flexiable Cancelation"><a href="#">Flexiable Cancelation</a></div>
+        <div class=" e-Gift Card"><a href="#"> e-Gift Card</a></div>
+        <div class="Privacy Policy"><a href="#">  Privacy Policy</a></div>
+        <div class="Contact Us"><a href="#"> Contact Us</a></div>
+        <div class="Careers"><a href="#"> Careers</a></div>
+
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-0x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-0x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-0x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-0x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-0x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-0x"></a>
+     
+    </div>
+  </footer>
+</body>
+
+</html>

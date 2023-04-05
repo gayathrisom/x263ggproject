@@ -1,0 +1,578 @@
+* {
+    /* Defines how the width and height of an element are calculated: should they include padding and borders, or not. */
+    /* box-sizing: border-box; Width and height apply to all parts of the element: content, padding and borders */
+    /* box-sizing: content-box; Width and height only apply to the content of the element */
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "Font Family 1";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Font Family 2";
+    src: url("../fonts/BonheurRoyale-Regular.ttf") format("truetype");
+  }
+
+/* BEG styling for logo on top */
+  body {
+    margin: 0;
+    font-family: "Font Family 2";
+
+  }
+
+  header a.logo {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url("../images/logo1.jpg") no-repeat 0 0;
+    background-size: contain;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+  }
+
+  .home-page {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0; /* need to have position set to "fixed" */
+    bottom: 0; /* need to have position set to "fixed" */
+    width: auto;
+    height: auto;
+    background: #eee url(../images/main.jpg) no-repeat center;
+    background-size: cover;
+    display: flex; /* for hero text */
+    justify-content: left; /* for hero text */
+    align-items: center; /* for hero text */
+    z-index: -1;
+
+  }
+/* END styling for logo on top */
+
+/* BEG styling search bar */
+header {
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header * {
+  background-color: white;
+}
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 20px;
+}
+.search-box input[type="text"], .search-box button {
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.search-box input[type="text"] {
+  padding: 8px;
+  width: 560px;
+  border: none;
+  border-radius: 5px;
+}
+.search-box button {
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+}
+
+.login-container {
+  display: flex;
+  flex: 2;
+  
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: right;
+}
+
+.login-container button[type="button"] {
+  padding: 8px 16px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* END styling search bar */
+
+/* BEG styling navigation bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0px 0px 0px 35px;
+    flex: 1;
+  }
+
+  /* nav ul li:last-child {
+    padding-right: 200px;
+  } */
+
+  nav > ul > li {
+    float: left;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: auto;
+  }
+
+  /* styling hover nav item */
+
+  nav ul li a:hover {
+    background-color: white;
+  }
+
+  .active-page {
+    background-color: white;
+  }
+
+  .active-menu-item {
+    background-color: #339999;
+  }
+
+  /* END styling navigation bar */
+
+  /********** BEG for dropdown menu in small screen **********/
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+  }
+  
+  .dropdown button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dropbtn {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; /* align to left */
+    top: 100%; /* position below the nav list */
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: green;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /********** END for dropdown menu in small screen **********/
+
+  /* BEG styling hero screen*/
+  .home-page {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0; /* need to have position set to "fixed" */
+    bottom: 0; /* need to have position set to "fixed" */
+    width: auto;
+    height: auto;
+    background: #eee url(../images/main.jpg) no-repeat center;
+    background-size: cover;
+    display: flex; /* for hero text */
+    justify-content: left; /* for hero text */
+    align-items: center; /* for hero text */
+    z-index: -1;
+
+  }
+  .hero-text {
+    color: floralwhite;
+    font-size: 2em;
+    font-family:Arial, sans-serif;
+    font-weight: bold;
+    padding-top:0px; padding-left: 100px; padding-right: 50px;
+    margin-top: 10px; margin-left: 50px;
+  }
+  .hero-text2 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:300px; padding-left: 20px;
+  }
+  .hero-text3 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:300px; padding-left: 100px;
+  }
+  .hero-text4 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:300px; padding-left: 100px;
+  }
+  /* END styling hero screen*/
+
+  /* style page banner */
+  header.aboutus {
+    background: white url; /* top center bottom - 1/3 of the image full height */
+    background-size: cover;
+    height: 650px;
+    width: 1000px;
+    margin: left 10px; ;
+  }
+
+  header.page-4 {
+    /* add you own header here */
+    background: white url;
+    background-size: cover;
+    width: 100%;
+    float: top;
+    margin:right 10px;
+    padding: 1000;
+  }
+
+  /* BEG styling headings */
+  h1 {
+    margin: 100px 100px .5em 0px;
+    color:black;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 7px;
+    padding-top:0px; padding-left: 600px;
+  }
+  h2 {
+    margin: 100px 100px 1em 0px;
+    color:black;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 5px;
+    padding-top:1px; padding-left: 650px;
+  }
+
+  h3 {
+    margin: 0px 0px 1em 0px;
+    color: black;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top:0px; padding-left: 20px;
+  }
+  /* END styling headings */
+
+  /* Styling anchor link (hyperlink) */
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+  /* BEG styling images */
+  img.size01 {
+    max-width: 800px;
+    padding-bottom: 10px;
+  }
+
+  img.size02 {
+    max-width: 1500px;
+    padding-bottom: 15px;
+  }
+
+  img.size03 {
+    max-width: 500px;
+    padding-bottom: 20px;
+  }
+
+  .padding-right {
+    padding-right: 15px;
+  }
+
+  .padding-left {
+    padding-left: 15px;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  .to-top {
+    width: 5%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* END styling images */
+
+  /* set padding from browser edges for content */
+  article > div {
+  /* padding: top right bottom left */
+  padding: 0px;
+  }
+  footer > div.social-icon {
+    width:100% ;
+    height: 44px;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+
+  @media screen and (max-width: 750px) {
+    /*header {
+      height: 240px;
+    }*/
+    header a.logo {
+      width: 120px;
+      height: 44px;
+    }
+    /*** for carousel area ***/
+    section > div.carousel-area {
+
+    }
+    /*** for carousel area ***/
+    article {
+      width: 100%;
+      float: none;
+      margin-bottom: 40px;
+    }
+    article > div {
+      margin: 0px 40px;
+      /* padding: top right bottom left */
+      padding: 0px 0px 30px 0px;
+      border-right: none;
+      border-bottom: 1px solid #555;
+    }
+    aside {
+      width: 100%;
+      float: none;
+    }
+
+    nav {
+      /* padding: top right bottom left */
+      padding: 60px 0px 0px 20px;
+    }
+    nav > ul {
+      padding-left: 0px;
+      padding-right: 20px;
+    }
+    nav > ul > li > a {
+      /* padding: top right bottom left */
+      padding: 8px 12px 10px 12px;
+    }
+    .flex-container > div {
+      width: 25%;
+    }
+    .flex-container > span > h2 {
+      text-align: center;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    video {
+      display: none;
+    }
+  }
+
+  /********** BEG for dropdown menu in small screen **********/
+  @media screen and (max-width: 500px) {
+    nav > ul {
+      display: none;
+    }
+    header.food-page {
+      background: #eee url(../images/food-02.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+      background-size: cover;
+      height: 270px;
+    }
+
+    .flex-container > div {
+      width: 50%;
+    }
+    aside > div > div.scrolling {
+      height: 300px;
+    }
+  }
+  /********** END for dropdown menu in small screen **********/
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: block ;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-container {
+    display: flex;
+    width: 200%;
+    animation: slide 10s infinite;
+  }
+
+  .carousel-container img {
+    width: 50%;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  #lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  var openLightboxBtn = document.getElementById('open-lightbox');
+  var lightbox = document.getElementById('lightbox');
+
+  openLightboxBtn.addEventListener('click', function() {
+    lightbox.style.display = 'block';
+  });
+
+  lightbox.addEventListener('click', function(event) {
+    if (event.target == lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
